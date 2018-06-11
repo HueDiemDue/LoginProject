@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\HueNguyen\LoginProject\android\app\build\intermediates\exploded-aar\LoginProject\react-native-sha256\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d313f05112c395021cfc8940a077df14b00ddbf9">
+        <dex dex="D:\HueNguyen\LoginProject\android\app\build\intermediates\pre-dexed\debug\LoginProject-react-native-sha256-unspecified_ac17d62720a45a33619888222c14ef051dc549b3.jar" />
+    </item>
+
+</items>
