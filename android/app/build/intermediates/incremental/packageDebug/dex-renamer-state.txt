@@ -1,4 +1,4 @@
-#Mon Jun 11 15:02:08 ICT 2018
+#Mon Jun 11 16:02:32 ICT 2018
 base.0=D\:\\HueNguyen\\LoginProject\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=D\:\\HueNguyen\\LoginProject\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

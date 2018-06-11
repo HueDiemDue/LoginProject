@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import { styleLogin } from './style';
 import dataLogin from './fileData';
-import { sha256 } from 'react-native-sha256';
+import sha256 from 'crypto-js/sha256';
 
 export default class LoginScreen extends Component {
 	static navigationOptions = {
@@ -24,7 +24,7 @@ export default class LoginScreen extends Component {
 
 		}
 
-
+// 
 	}
 
 	_onPressButtonLogin = () => {
@@ -37,35 +37,34 @@ export default class LoginScreen extends Component {
 
 		// window.alert(JSON.stringify(dataLogin));
 
-		sha256(user_name).then( hash => {
-			window.alert(hash);
-		})
+		// var sha = SHA256(user_name);
+		// window.alert(sha);
 
-		// if (user_name === '' || pass_word === '') {
-		// 	window.alert("Please Enter All the Values");
-		// 	return;
-		// }
-		// var result = dataLogin.filter(x => x.username === user_name, x => x.password === pass_word);
+		if (user_name === '' || pass_word === '') {
+			window.alert("Please Enter All the Values");
+			return;
+		}
+		var result = dataLogin.filter(x => x.username === user_name, x => x.password === pass_word);
 
-		// if (result.length < 0) {
-		// 	window.alert("Login Failed");
-		// 	this.setState({ username: '' });
-		// 	this.setState({ password: '' });
-		// 	return;
-		// }
-		// else {
-		// 	if (user_name == result[0].username && pass_word == result[0].password) {
-		// 		window.alert("Login Success");
-		// 		this.props.navigation.push('Home');
-		// 		return;
-		// 	} else {
-		// 		window.alert("Login Failed");
-		// 		this.setState({ username: '' });
-		// 		this.setState({ password: '' });
-		// 		return;
-		// 	}
+		if (result.length < 0) {
+			window.alert("Login Failed");
+			this.setState({ username: '' });
+			this.setState({ password: '' });
+			return;
+		}
+		else {
+			if (user_name == result[0].username && pass_word == result[0].password) {
+				window.alert("Login Success");
+				this.props.navigation.push('Home');
+				return;
+			} else {
+				window.alert("Login Failed");
+				this.setState({ username: '' });
+				this.setState({ password: '' });
+				return;
+			}
 
-		// }
+		}
 
 	}
 	_onPressButtonRegister = () => {
