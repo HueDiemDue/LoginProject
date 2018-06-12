@@ -2,6 +2,7 @@ import { AppRegistry } from 'react-native';
 import LoginScreen from './app/LoginScreen';
 import HomeScreen from './app/HomeScreen';
 import DetailSong from './app/DetailSong';
+import DetailUser from './app/DetailUser';
 import RegisterScreen from './app/RegisterScreen';
 import { StackNavigator } from 'react-navigation';
 // import {
@@ -10,19 +11,19 @@ import { StackNavigator } from 'react-navigation';
 // } from 'react-native';
 import React, { Component } from 'react';
 
-const Navigator = StackNavigator(
-    {
-        Login: LoginScreen,
-        Home: HomeScreen,
-        Register: RegisterScreen
-    }
-);
-export default class Main extends Component {
-    render() {
-        return (
-            <Navigator />
-        );
-    }
-}
+// const Navigator = StackNavigator(
+//     {
+//         Login: LoginScreen,
+//         Home: HomeScreen,
+//         Register: RegisterScreen
+//     }
+// );
+// export default class Main extends Component {
+//     render() {
+//         return (
+//             <Navigator />
+//         );
+//     }
+// }
 
-AppRegistry.registerComponent('LoginProject', () => Main);
+AppRegistry.registerComponent('LoginProject', () => DetailUser);
