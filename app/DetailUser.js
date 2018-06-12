@@ -47,6 +47,7 @@ export default class DetailUser extends Component {
         this.refreshDataFromServer = this.refreshDataFromServer.bind(this);
     }
     componentDidMount() {
+        console.log("2");
         this.refreshDataFromServer();
     }
     refreshDataFromServer = () => {
@@ -61,6 +62,7 @@ export default class DetailUser extends Component {
     }
 
     render() {
+        console.log("1");
         return (
             <View style={{
                 flex: 1,

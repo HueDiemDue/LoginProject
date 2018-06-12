@@ -13,7 +13,6 @@ async function getAllUser() {
     try {
         let response = await fetch(apiGetAllUser);
         let responseJson = await response.json();
-        // return responseJson.data;
         return responseJson.data;
     } catch (error) {
         console.log("Error get list : " + error);
